@@ -26,7 +26,7 @@ const Sidebar: React.FC = () => {
       </div>
 
       {/* Menu Items */}
-      <div className="flex flex-col space-y-4 flex-grow">
+      <div className="flex flex-col space-y-3 flex-grow mb-4">
         <Link href="/home" className="flex items-center space-x-4 hover:bg-black hover:text-white p-2 rounded-md">
           <MdHome size={24} />
           <span className="text-lg">Home</span>
@@ -42,11 +42,6 @@ const Sidebar: React.FC = () => {
           <span className="text-lg">Calendar</span>
         </Link>
 
-        <Link href="/mentor" className="flex items-center space-x-4 hover:bg-black hover:text-white p-2 rounded-md">
-          <FaChalkboardTeacher size={24} />
-          <span className="text-lg">Mentor</span>
-        </Link>
-
         <Link href="/team" className="flex items-center space-x-4 hover:bg-black hover:text-white p-2 rounded-md">
           <MdGroup size={24} />
           <span className="text-lg">Team</span>
@@ -56,18 +51,13 @@ const Sidebar: React.FC = () => {
           <BiLink size={24} />
           <span className="text-lg">Links</span>
         </Link>
-
-        <Link href="/speeches" className="flex items-center space-x-4 hover:bg-black hover:text-white p-2 rounded-md">
-          <FiMic size={24} />
-          <span className="text-lg">Speeches</span>
-        </Link>
       </div>
 
       {/* Divider */}
-      <div className="border-t border-gray-600 my-6" />
+      <div className="border-t border-gray-600 my-4" />
 
       {/* Footer Items */}
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-3">
         <Link href="/settings" className="flex items-center space-x-4 hover:bg-black hover:text-white p-2 rounded-md">
           <MdSettings size={24} />
           <span className="text-lg">Settings</span>
