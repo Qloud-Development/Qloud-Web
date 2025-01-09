@@ -4,21 +4,21 @@ import Image from 'next/image';
 
 const Recommended = () => {
     const stories = [
-        { id: 1, username: '@hisroyalfreshness_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 2, username: '@martineetodayhh_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 3, username: '@designwithme_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 4, username: '@codingenthusiast_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 5, username: '@foodielove_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 6, username: '@wanderlustlife_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 7, username: '@petparent_', profilePic: '/assets/profile-icon-9.png' },
+        { id: 1, username: '@hisroyalfreshness_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 2, username: '@martineetodayhh_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 3, username: '@designwithme_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 4, username: '@codingenthusiast_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 5, username: '@foodielove_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 6, username: '@wanderlustlife_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 7, username: '@petparent_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
     ];
 
     const recommendedUsers = [
-        { id: 1, username: '@codewizard_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 2, username: '@travelwithme_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 3, username: '@fitnessfreak_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 4, username: '@designpro_', profilePic: '/assets/profile-icon-9.png' },
-        { id: 5, username: '@foodexplorer_', profilePic: '/assets/profile-icon-9.png' },
+        { id: 1, username: '@codewizard_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 2, username: '@travelwithme_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 3, username: '@fitnessfreak_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 4, username: '@designpro_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
+        { id: 5, username: '@foodexplorer_', profilePic: '/Qloud-Web/assets/profile-icon-9.png' },
     ];
 
     return (
