@@ -6,7 +6,6 @@ import { FaHeart, FaComment, FaShare } from 'react-icons/fa'; // Adding icons fo
 const Home = () => {
   const [activeTab, setActiveTab] = useState('Feed');
   const [showModal, setShowModal] = useState(false);
-  const [username, setUsername] = useState('');
   const [activeStep, setActiveStep] = useState(2);
 
   const posts = [
