@@ -3,8 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { MdHome, MdFolder, MdCalendarToday, MdGroup, MdSettings, MdHelpOutline, MdCall } from 'react-icons/md';  // Material Icons
-import { FaChalkboardTeacher } from 'react-icons/fa';  // FontAwesome Icons
-import { FiMic } from 'react-icons/fi';  // Feather Icons
 import { BiLink, BiNetworkChart, BiLogIn } from 'react-icons/bi';  // Boxicons
 
 const Sidebar: React.FC = () => {
