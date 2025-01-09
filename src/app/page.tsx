@@ -12,7 +12,7 @@ export default function HomeScreen() {
         transition={{ duration: 0.5 }}
       >
         <Image
-          src="Qloud-Web/assets/logo.png" // Replace with your logo path in the public folder
+          src="assets/logo.png" // Replace with your logo path in the public folder
           alt="Logo"
           width={150}
           height={150}
