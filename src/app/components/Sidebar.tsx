@@ -48,7 +48,7 @@ const Sidebar: React.FC = () => {
         <div className="flex flex-col items-center mb-8">
           <Link href="/profile" onClick={handleLinkClick}>
             <Image
-              src="/assets/profile-icon-9.png"
+              src="/Qloud-Web/assets/profile-icon-9.png"
               alt="Profile Image"
               width={80}
               height={80}
