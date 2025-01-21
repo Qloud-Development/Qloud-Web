@@ -5,7 +5,7 @@ import Recommended from "../components/Recommended"; // Assuming you have a comp
 import BottomTabBar from "../components/Bottombar";
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen] = useState(false);
   const [isRecommendedStoriesOpen] = useState(false);
 
 
