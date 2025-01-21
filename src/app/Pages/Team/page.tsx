@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Home() {
   // Tasks State
-  const [tasks, setTasks] = useState([
+  const [tasks] = useState([
     { id: 1, name: "Task 1", inCharge: "John", status: "Pending" },
     { id: 2, name: "Task 2", inCharge: "Jane", status: "Completed" },
   ]);
@@ -23,7 +23,7 @@ export default function Home() {
 
   // Milestones for Timeline
   const milestones = ["Idea", "Development", "Launch", "Scale"];
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep] = useState(2);
 
   // Handlers
   const addMember = () => {

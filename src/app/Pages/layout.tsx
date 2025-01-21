@@ -3,15 +3,11 @@ import React, { PropsWithChildren, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Recommended from "../components/Recommended"; // Assuming you have a component for recommended stories
 import BottomTabBar from "../components/Bottombar";
-import { FiMenu, FiX } from "react-icons/fi"; // For the hamburger menu icon
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [isRecommendedStoriesOpen, setRecommendedStoriesOpen] = useState(false);
+  const [isRecommendedStoriesOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen((prev) => !prev);
-  };
 
 
   return (

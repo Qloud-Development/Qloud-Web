@@ -11,7 +11,7 @@ import {
   MdHelpOutline,
   MdCall,
 } from "react-icons/md"; // Material Icons
-import { BiLink, BiNetworkChart, BiLogIn, BiMap } from "react-icons/bi"; // Boxicons
+import {BiNetworkChart, BiLogIn, BiMap } from "react-icons/bi"; // Boxicons
 import { AiOutlineMenu } from "react-icons/ai"; // Menu Icon for mobile
 
 const Sidebar: React.FC = () => {
