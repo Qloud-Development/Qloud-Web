@@ -187,25 +187,45 @@ const Home = () => {
 
       {/* Qloud Section with Dynamic Animation */}
       {activeTab === 'Qloud' && (
-        <div className="flex flex-col items-center justify-center flex-grow p-6 transition-all duration-300">
-          <h2 className="text-3xl font-serif mb-10 text-gray-800">Your Progress</h2>
-          <div className="flex items-center space-x-4">
-            {progressSteps.map((step, index) => (
-              <React.Fragment key={step}>
-                {index !== 0 && (
-                  <div className={`w-10 h-1 ${index <= activeStep ? 'bg-green-500' : 'bg-gray-300'}`}></div>
-                )}
-                <div
-                  className={`qloud-step w-40 h-40 rounded-full flex items-center justify-center transition-all duration-500 ease-in-out cursor-pointer ${index === activeStep ? 'bg-green-500 text-white scale-125 shadow-lg' : 'bg-gray-300'}`}
-                  onClick={() => setActiveStep(index)}
-                >
-                  <span className="text-xl font-bold">{step}</span>
-                </div>
-              </React.Fragment>
-            ))}
+  <div className="flex flex-col items-center justify-center flex-grow p-6 transition-all duration-300">
+    <h2 className="text-3xl font-serif mb-10 text-gray-800 text-center">Your Progress</h2>
+
+    {/* Responsive Container for Progress Steps */}
+    <div className="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-4">
+      {progressSteps.map((step, index) => (
+        <React.Fragment key={step}>
+          {/* Connector Line */}
+          {index !== 0 && (
+            <div
+              className={`${
+                index <= activeStep ? 'bg-green-500' : 'bg-gray-300'
+              } transition-all duration-300 lg:w-10 lg:h-1 w-1 h-10 lg:my-0 my-4`}
+            ></div>
+          )}
+
+          {/* Step Circle */}
+          <div
+            className={`qloud-step flex items-center justify-center 
+              w-32 h-32 lg:w-40 lg:h-40 
+              rounded-full border-1 lg:border-2 border-black
+              transition-all duration-500 ease-in-out cursor-pointer 
+              ${
+                index === activeStep
+                  ? 'bg-green-500 text-white scale-125 shadow-lg'
+                  : 'bg-gray-300 text-gray-700'
+              }
+              hover:scale-110 hover:shadow-xl`}
+            onClick={() => setActiveStep(index)}
+          >
+            <span className="text-sm lg:text-xl font-bold">{step}</span>
           </div>
-        </div>
-      )}
+        </React.Fragment>
+      ))}
+    </div>
+  </div>
+)}
+
+
 
       {/* FAB */}
       <button

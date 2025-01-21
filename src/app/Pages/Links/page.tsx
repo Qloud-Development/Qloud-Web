@@ -12,8 +12,8 @@ const profiles = [
     interests: "3.3M",
     website1: "www.canva.com",
     website2: "www.qloudai.com",
-    avatar: "/placeholder-avatar.png", // Replace with your avatar path
-    profileImage: "/example-image.jpg", // Replace with your image path
+    avatar: "/assets/profile-icon-9.png", // Replace with your avatar path
+    profileImage: "/assets/design.jpg", // Replace with your image path
   },
   {
     id: "2",
@@ -24,8 +24,8 @@ const profiles = [
     interests: "2.7M",
     website1: "www.canva.com",
     website2: "www.qloudai.com",
-    avatar: "/placeholder-avatar.png",
-    profileImage: "/example-image.jpg",
+    avatar: "/assets/profile-icon-9.png",
+    profileImage: "/assets/shoes.jpg",
   },
   // Add more profiles as needed
 ];
@@ -52,7 +52,7 @@ const LinksScreen = () => {
   };
 
   const renderProfile = (profile: any) => (
-    <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md transition-transform transform hover:scale-105">
+    <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md sm:max-w-lg transition-transform transform hover:scale-105">
       {/* Progress Bar */}
       <div className="flex space-x-2 mb-6">
         <div className="h-1 w-1/4 bg-black rounded-full"></div>
@@ -125,21 +125,21 @@ const LinksScreen = () => {
   );
 
   return (
-    <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
+    <div className="bg-gray-100 min-h-screen flex flex-col justify-between items-center p-4 sm:p-8">
       {/* Header */}
-      <div className="w-full flex justify-between items-center px-6 py-4 bg-white shadow-md">
+      <div className="w-full max-w-4xl flex justify-between items-center px-6 py-4 bg-white shadow-md rounded-lg">
         <h1 className="text-xl font-bold text-black">Change Preferences</h1>
         <div className="bg-black text-white px-3 py-1 rounded-full">12</div>
         <button className="text-black text-2xl font-semibold">+</button>
       </div>
 
       {/* Profile Card */}
-      <div className="flex-1 flex justify-center items-center w-full my-8">
+      <div className="flex-1 flex justify-center items-center w-full">
         {renderProfile(profiles[currentIndex])}
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-between w-1/3 mb-8">
+      <div className="flex justify-between w-full max-w-xs sm:max-w-sm mb-8">
         <button
           onClick={handlePreviousProfile}
           className="text-3xl text-gray-600 hover:text-black transition-colors"
