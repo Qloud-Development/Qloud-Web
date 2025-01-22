@@ -17,7 +17,14 @@ const BottomTabBar: React.FC = () => {
         <Image src="/Qloud-Web/assets/connections.png" alt="Connections" width={50} height={50} />
       </button>
       <button className="flex flex-col items-center text-gray-500 hover:text-blue-600 transition-colors duration-300">
+<<<<<<< Updated upstream
         <Image src="/Qloud-Web/assets/myra.png" alt="Myra" width={50} height={50} />
+=======
+        <Image src="/assets/portfolio.png" alt="Connections" width={50} height={50} />
+      </button>
+      <button className="flex flex-col items-center text-gray-500 hover:text-blue-600 transition-colors duration-300">
+        <Image src="/assets/myra.png" alt="Myra" width={50} height={50} />
+>>>>>>> Stashed changes
       </button>
     </div>
   );

@@ -11,7 +11,7 @@ import {
   MdHelpOutline,
   MdCall,
 } from "react-icons/md"; // Material Icons
-import {BiNetworkChart, BiLogIn, BiMap } from "react-icons/bi"; // Boxicons
+import { BiNetworkChart, BiLogIn, BiMap } from "react-icons/bi"; // Boxicons
 import { AiOutlineMenu } from "react-icons/ai"; // Menu Icon for mobile
 
 const Sidebar: React.FC = () => {
@@ -40,9 +40,8 @@ const Sidebar: React.FC = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-screen bg-white text-black w-64 p-6 flex flex-col z-40 transform transition-transform ${
-          isOpen ? "translate-x-0" : "-translate-x-64"
-        } md:translate-x-0`}
+        className={`fixed top-0 left-0 h-screen bg-white text-black w-64 p-6 flex flex-col z-40 transform transition-transform ${isOpen ? "translate-x-0" : "-translate-x-64"
+          } md:translate-x-0`}
       >
         {/* Profile Section */}
         <div className="flex flex-col items-center mb-8">
@@ -110,9 +109,18 @@ const Sidebar: React.FC = () => {
             className="flex items-center space-x-4 hover:bg-black hover:text-white p-2 rounded-md"
             onClick={handleLinkClick}
           >
-            <BiMap size={24} />
+            <div className="group relative">
+              <Image
+                src="/assets/portfolio.png"
+                alt="Connections"
+                width={36}
+                height={36}
+                className="transition-colors duration-300 group-hover:bg-white rounded-full p-1" // Added hover background and padding
+              />
+            </div>
             <span className="text-lg">Portfolio</span>
           </Link>
+
           <div className="border-t border-gray-600 my-4" />
 
           {/* Footer Items */}

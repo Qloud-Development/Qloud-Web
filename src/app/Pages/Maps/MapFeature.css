@@ -1,0 +1,46 @@
+.map-feature-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .map-container {
+    flex-grow: 1;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .ghost-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .business-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .apply-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
